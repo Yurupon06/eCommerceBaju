@@ -66,7 +66,6 @@ class ProductController extends Controller
             return redirect()->route('product.index')->with([
                 'status' => 'simpan',
                 'pesan' => 'New product data with the name "' . $request->product_name . '" has been successfully added.',
-                'product_name' => DB::table('vwproduct')->get()
             ]);
         }
     }
