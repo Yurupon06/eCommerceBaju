@@ -44,7 +44,7 @@
                       </div>
                     </td>
                     <td>
-                     {{ $dt->category_name }}
+                     {{ $dt->category->category_name }}
                     </td>
                     <td>
                      {{ $dt->product_name }}

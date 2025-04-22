@@ -19,8 +19,8 @@ class Product extends Model
         'image3_url',
     ];
 
-    public function cpcate(){
-        return $this->belongsTo(ProductCategories::class, 'category_name', 'id');
+    public function category(){
+        return $this->belongsTo(ProductCategories::class, 'product_category_id');
     }
     public function discount(){
         return $this->hasOne(Discount::class);
