@@ -63,7 +63,7 @@
                      {{ $dt->stok_quantity }}
                     </td>
                     <td>
-                      <img src="{{ asset('storage/' . $dt->image1_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
+                      <img src="{{ asset('storage/app/' . $dt->image1_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td>
                       <img src="{{ asset('storage/' . $dt->image2_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
