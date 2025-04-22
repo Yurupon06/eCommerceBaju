@@ -63,13 +63,13 @@
                      {{ $dt->stok_quantity }}
                     </td>
                     <td>
-                      <img src="storage/{{ $dt->image1_url }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
+                      <img src="{{ asset('storage/' . $dt->image1_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td>
-                      <img src="storage/{{ $dt->image2_url }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
+                      <img src="{{ asset('storage/' . $dt->image2_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td>
-                      <img src="storage/{{ $dt->image3_url }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
+                      <img src="{{ asset('storage/' . $dt->image3_url) }}" class="img-thumbnail" alt="" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td class="align-middle text-center text-sm">
                       <a href="{{route('product.edit', $dt->id)}}"><span class="badge badge-sm bg-gradient-success">edit</span></a>
