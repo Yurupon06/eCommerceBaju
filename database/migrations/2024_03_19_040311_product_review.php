@@ -14,9 +14,9 @@ return new class extends Migration
         //
         Schema::create('product_reviews', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('customer_id')->nullabel();
+            $table->unsignedBigInteger('customer_id')->nullable();
             $table->foreign('customer_id')->references('id')->on('customers')->ondelete('cascade')->onupdate('cascade');
-            $table->unsignedBigInteger('product_id')->nullabel();
+            $table->unsignedBigInteger('product_id')->nullable();
             $table->foreign('product_id')->references('id')->on('products')->ondelete('cascade')->onupdate('cascade');
             $table->tinyInteger('rating');
             $table->text('comment');
